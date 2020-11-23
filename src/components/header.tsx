@@ -4,4 +4,8 @@ interface HeaderProps {
   title: string
 }
 
-export default (props: HeaderProps) => <h1>{props.title}</h1>
+export default (props: HeaderProps) => <header>
+  <nav className = "navbar">
+
+  </nav>
+</header>
