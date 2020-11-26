@@ -2,14 +2,14 @@ import * as React from "react"
 import { useState} from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {faGithub,faStackOverflow, faLinkedin, faReddit} from "@fortawesome/free-brands-svg-icons"
+import logo from "../assets/img/logo.svg";
 
-const logo = require('../assets/img/logo.svg')
 
 export default () => {
   const [isNavbarActive, setIsNavbarActive] = useState(false)
 
   return <header>
-    <nav className="navbar" role="navigation" aria-label="main navigation">
+    <nav className="navbar main-nav" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
         <div className="navbar-item">
           <img className="m-0" src={logo} width="32" height="32" alt=""/>

@@ -1,2 +1,34 @@
 @import '_mixins';
+$transperant-bg: rgba(256, 256, 256, 0.9);
+$logo-background: #ffb800;
+.main-nav {
+  background-color: $transperant-bg;
+  border-bottom: 3px solid $logo-background;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+}
 
+.main-content {
+  margin-top: 80px;
+}
+.contact-button {
+  background-color: $transperant-bg;
+  border: 5px solid $logo-background;
+  @include boxShadow(24dp);
+  border-radius: 10px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  padding: 2px;
+  .animated-logo {
+    svg {
+      height: 64px;
+      width: 64px;
+    }
+  }
+  &:hover {
+    background-color: #ffffff;
+  }
+}
