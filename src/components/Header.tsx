@@ -2,7 +2,7 @@ import * as React from "react"
 import { useState} from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {faGithub,faStackOverflow, faLinkedin, faReddit} from "@fortawesome/free-brands-svg-icons"
-import logo from "../assets/img/logo.svg";
+import Logo from "./Logo"
 
 
 export default () => {
@@ -12,7 +12,7 @@ export default () => {
     <nav className="navbar main-nav" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
         <div className="navbar-item">
-          <img className="m-0" src={logo} width="32" height="32" alt=""/>
+          <Logo width="32px" height="32px"/>
           <span className="is-uppercase ml-3 is-size-5">
           princebillyGK
           </span>
@@ -74,4 +74,7 @@ export default () => {
   </nav>
 </header>
 }
+
+
+
 
