@@ -1,6 +1,6 @@
 import * as React from "react"
 
-export default (props: React.SVGProps<SVGElement>) => (
+export default (props: {height: string, width: string}) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     version="1.1"
