@@ -1,4 +1,25 @@
 @import '~bulma/bulma';
 @import '_layout';
+@import '_variables';
+//index.tsx
+.intro-hero {
+  .my-photo-container{
+    position: relative;
+    img {
+      max-height: 500px;
+    }
+    &:hover {
+      img {
+        filter: brightness(0.85) contrast(1.6) ;
+      }
+      &:after{
+        position: absolute; content: ''; display: block; top: 0; left: 0; height: 100%; width: 100%;
+        background: linear-gradient(to left,rgb(255, 0, 0) 0%, rgb(0, 255, 6) 100%);
+        mix-blend-mode: saturation
+      }
+    }
+  }
 
+
+}
 

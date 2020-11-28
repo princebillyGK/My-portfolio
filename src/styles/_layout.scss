@@ -5,15 +5,16 @@ $logo-background: #ffb800;
   background-color: $transperant-bg;
   border-bottom: 3px solid $logo-background;
   position: fixed;
-  top: 0px;
-  left: 0px;
-  right: 0px;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .main-content {
-  margin-top: 80px;
+  margin-top: 52px;
 }
 .contact-button {
+  z-index: 1000;
   background-color: $transperant-bg;
   border: 5px solid $logo-background;
   @include boxShadow(24dp);
